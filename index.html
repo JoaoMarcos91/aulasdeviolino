@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Violino</title>
+    <style>
+      #popupOverlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.75);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .frase{
+      font-weight: 700;
+    }
+
+    .violino {
+      padding: 5px;
+      margin: auto;
+      width: 250px;
+      height: auto;
+    }
+
+    img {
+      display: block;
+      height: 450px;
+      padding-top: 130px;
+      border-radius: 30px;
+      margin-bottom: 110px;
+    }
+
+    .p-inicio {
+      margin-bottom: 30px;
+    }
+
+    .pacotes {
+      margin-top: 50px;
+    }
+
+    /* Estilo da caixa do popup */
+    #popup {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    #closeBtn {
+      margin-top: 10px;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+          background-image: url("foto-banner-@joaomarcosviolino no youtube copy.jpg");
+          background-size: cover;
+            /* background: linear-gradient(135deg, #4a2e2b 0%, #4a2e2b 33%, #fff 33%, #fff 66%, #8d6449 66%, #8d6449 100%); */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .enviarBtn, #closeBtn {
+          background-color: #4a2e2b;
+          color: white;
+          padding: 0.8rem 2rem;
+          border: none;
+          border-radius: 50px;
+          font-weight: bold;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          align-self: center;
+      }
+
+  label {
+    font-weight: bold;
+    color: #4a2e2b;
+}
+
+.enviarBtn:hover, #closeBtn:hover {
+    background-color: #352120;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+  .input-text {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+      outline: none;
+  }
+
+  .input-text:focus {
+    border-color: #4a2e2b;
+}
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .violino-icon {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 1rem auto;
+            fill: #4a2e2b;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .photo-space {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .photo-space:hover {
+            cursor: pointer;
+        }
+
+        .pricing {
+            margin: 3rem 0;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #4a2e2b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4a2e2b;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+
+        .economy {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #8d6449;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #725239;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #4a2e2b;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .social-icons i {
+            font-size: 1.5rem;
+            width: 140px;
+            height: 40px;
+            background-color: white;
+            color: #4a2e2b;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons i:hover {
+            background-color: #8d6449;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.7rem;
+            }
+
+            .photo-space {
+                width: 250px;
+                height: 170px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+
+            .photo-space {
+                width: 100%;
+                max-width: 300px;
+                height: 200px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fade-in 1s ease forwards;
+        }
+
+        .delay-1 {
+            opacity: 0;
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            opacity: 0;
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            opacity: 0;
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Aprenda Violino com Excelência</h1>
+            <p>Aulas personalizadas para todos os níveis</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro animate">
+            <div>
+                <img class="violino" src="violino-site.png" alt="Imagem de um violino.">
+            </div>
+            <h2>Bem-vindo às aulas de violino!</h2>
+            <p class="p-inicio">Ofereço aulas dinâmicas e envolventes, voltadas para desenvolver suas habilidades técnicas, expressivas e de compreensão musical no violino.</p>
+            <p class="frase">Tenha um som bonito hoje!</p>
+        </div>
+
+        <div class="photos">
+            <div class="photo-space animate delay-1" id="photo1">
+                <img src="foto-para thumbnail-sem fundo.png" alt="Foto de João Marcos Simon Paulini segurando seu violino.">
+            </div>
+        </div>
+
+        <div class="pricing animate delay-3">
+            <h2 class="pacotes">Pacotes e Valores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pacote</th>
+                        <th>Aulas por Semana</th>
+                        <th>Nº de Aulas</th>
+                        <th>Valor Total</th>
+                        <th>Valor por Aula</th>
+                        <th>Economia Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aula avulsa</td>
+                        <td>—</td>
+                        <td>1</td>
+                        <td>R$ 100</td>
+                        <td>R$ 100</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Mensal – 1x por semana</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>R$ 380</td>
+                        <td>R$ 95</td>
+                        <td class="economy">Economiza R$ 20 em relação à avulsa</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Mensal – 2x por semana</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>R$ 740</td>
+                        <td>R$ 92,50</td>
+                        <td class="economy">Economiza R$ 60 em relação à avulsa</td>
+                    </tr>
+                    <tr>
+                        <td>Trimestral – 2x por semana</td>
+                        <td>2</td>
+                        <td>24</td>
+                        <td>R$ 1.980</td>
+                        <td>R$ 82,50</td>
+                        <td class="economy">Economiza R$ 420 em relação à avulsa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cta animate">
+            <h2>Pronto para iniciar sua jornada musical no violino?</h2>
+            <button class="cta-button" id="contactBtn">Agende uma Aula Experimental</button>
+            <strong><p>Te responderemos em até 2 dias por Email ou WhatsApp.</p></strong>
+        </div>
+    </div>
+
+    <div id="popupOverlay">
+      <div id="popup">
+        <form action="https://formspree.io/f/xldbzvnp" method="POST" class="form">
+            <label class="label">
+              Seu email:
+              <input class="input-text" type="email" name="email" placeholder="email@email.com">
+            </label>
+            <label class="label">
+              Seu WhatsApp(com DDD):
+              <input class="input-text" type="tel" name="tel" placeholder="(99) 99999-9999">
+            </label>
+            <label class="label">
+              Seu nome completo:
+              <input type="name" name="name" class="input-text">
+            </label>
+            <label class="label">
+              Qual seria o melhor horário para você?
+              <input type="datetime-local" name="datahora" />
+            </label>
+            <label class="label">
+              Sua mensagem:
+              <textarea name="message" class="input-text"></textarea>
+            </label>
+            <button class="enviarBtn" type="submit">Enviar</button>
+        </form>
+        <button id="closeBtn">Fechar</button>
+      </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/5561998534813" target="_blank"><i class="social-icon">WhatsApp</i></a>
+            <a href="mailto:contato@aulasdeviolino.com" target="_blank"><i class="social-icon">E-mail</i></a>
+            <a href="https://youtube.com/@joaomarcosviolino" target="_blank"><i class="social-icon">YouTube</i></a>
+        </div>
+        <p>© 2025 Aulas de Violino. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Animate elements when they come into view
+
+
+        // Show animations when elements come into view
+        const animatedElements = document.querySelectorAll('.animate');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animatedElements.forEach(element => {
+            observer.observe(element);
+            element.style.animationPlayState = 'paused';
+        });
+    </script>
+    <script>
+    const contactBtn = document.getElementById('contactBtn');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closeBtn = document.getElementById('closeBtn');
+
+    contactBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popupOverlay.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
