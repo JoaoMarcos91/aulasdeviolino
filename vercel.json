@@ -6,10 +6,10 @@
       "has": [
         {
           "type": "host",
-          "value": "aulasdeviolino.vercel.app"
+          "value": "https://aulasdeviolino.vercel.app"
         }
       ],
-      "destination": "https://jmpaulini.com/:1",
+      "destination": "https://jmpaulini.com",
       "permanent": true
     }
   ]
