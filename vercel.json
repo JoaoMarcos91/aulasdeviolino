@@ -1,16 +1,3 @@
 {
-  "rewrites": [{ "source": "/", "destination": "/index.html" }],
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "https://aulasdeviolino.vercel.app"
-        }
-      ],
-      "destination": "https://jmpaulini.com",
-      "permanent": true
-    }
-  ]
+  "rewrites": [{ "source": "/", "destination": "/index.html" }]
 }
