@@ -1,640 +1,663 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta
+      name="description"
+      content="Aulas de violino online para todos os níveis e idades com o professor João Marcos. Aprenda a técnica da Escola Franco Belga de violino, a leitura musical e a interpretação."
+    />
+    <meta
+      name="keywords"
+      content="aulas de violino online, curso de violino, aprender violino, violino do zero, professor de violino, aula de violino para iniciantes, violino para crianças, técnica de arco, música clássica no violino, João Marcos Simon Paulini, tocar violino, violino Brasília, violino, violin, violon, cours de violon, violin classes, violino, aulas, online, aprenda, curso, crianças, idades, jovens, do, zero, violino do zero, escola franco belga, franco-belga, francobelga, violino franco belga, método, joao, marcos, franco, belga, metodo, aulas, online"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="João Marcos Simon Paulini" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-adsense-account" content="ca-pub-1579202989760574" />
 
+    <!-- Schema.org: Course -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Aulas de Violino Online com João Marcos",
+        "description": "Aulas online de violino para todos os níveis e idades.",
+        "provider": {
+          "@type": "Organization",
+          "name": "João Marcos",
+          "sameAs": "https://jmpaulini.com"
+        }
+      }
+    </script>
 
-  <meta name="description" content="Aulas de violino online para todos os níveis e idades. Aprenda a técnica da Escola Franco Belga de violino, a leitura musical e a interpretação.">
-  <meta name="keywords" content="aulas de violino online, curso de violino, aprender violino, violino do zero, professor de violino, aula de violino para iniciantes, violino para crianças, técnica de arco, música clássica no violino, João Marcos Simon Paulini, tocar violino, violino Brasília, violino, violin, violon, cours de violon, violin classes, violino, aulas, online, aprenda, curso, crianças, idades, jovens, do, zero, violino do zero, escola franco belga, franco-belga, francobelga, violino franco belga, método, joao, marcos, franco, belga, metodo, aulas, online">
+    <!-- Schema.org: WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Aulas de Violino Online com João Marcos",
+        "url": "https://jmpaulini.com"
+      }
+    </script>
 
-  <!-- Favicon no formato PNG -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1579202989760574"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Aulas de Violino Online com João Marcos"
+    />
+    <meta
+      property="og:description"
+      content="Aprenda violino com aulas adaptadas ao seu nível, com foco em técnica, expressão e leitura de partituras."
+    />
+    <meta property="og:url" content="https://jmpaulini.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="foto2-para-thumbnail-sem-fundo.png" />
+    <meta
+      property="og:site_name"
+      content="Aulas de Violino Online com João Marcos"
+    />
 
-  <meta name="author" content="João Marcos Simon Paulini">
-  <meta name="robots" content="index, follow">
-  <meta name="google-adsense-account" content="ca-pub-1579202989760574">
-
-  <!-- Schema.org: Course -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "Aulas de Violino Online com João Marcos",
-    "description": "Aulas online de violino para todos os níveis e idades.",
-    "provider": {
-      "@type": "Organization",
-      "name": "João Marcos",
-      "sameAs": "https://jmpaulini.com"
-    }
-  }
-  </script>
-
-  <!-- Schema.org: WebSite (para nome do site) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Aulas de Violino Online com João Marcos",
-    "url": "https://jmpaulini.com"
-  }
-  </script>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1579202989760574"
-    crossorigin="anonymous"></script>
-
-  <!-- Open Graph para redes sociais -->
-  <meta property="og:title" content="Aulas de Violino Online com João Marcos">
-  <meta property="og:description" content="Aprenda violino com aulas adaptadas ao seu nível, com foco em técnica, expressão e leitura de partituras.">
-  <meta property="og:url" content="https://jmpaulini.com">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="foto2-para thumbnail sem fundo.png">
-  <meta property="og:site_name" content="Aulas de Violino Online com João Marcos">
-
-  <title>Aulas de Violino Online com João Marcos</title>
-</head>
+    <title>Aulas de Violino Online com João Marcos</title>
 
     <style>
-      #popupOverlay1 ,
-      #popupOverlay2{
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(255,255,255,0.75);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
+      #popupOverlay1,
+      #popupOverlay2 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.75);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
 
-    .frase{
-      font-weight: 700;
-    }
+      .frase {
+        font-weight: 700;
+      }
 
-    section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0.5rem 1rem;
-      text-align: center;
-    }
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        text-align: center;
+      }
 
+      .violino {
+        padding: 5px;
+        margin: auto;
+        height: 250px;
+        width: auto;
+      }
 
+      img {
+        display: block;
+        height: 450px;
+        padding-top: 130px;
+        border-radius: 30px;
+        margin-bottom: 110px;
+      }
 
-    .violino {
-      padding: 5px;
-      margin: auto;
-      height: 250px;
-      width: auto;
-    }
+      .contato-header {
+        background-color: #6d4337;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
-    img {
-      display: block;
-      height: 450px;
-      padding-top: 130px;
-      border-radius: 30px;
-      margin-bottom: 110px;
-    }
+      .contatos {
+        display: flex;
+        flex-direction: column;
+      }
 
-  .contato-header {
-    background-color: #6d4337;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+      .contato-header a {
+        color: #c9a44c;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px;
+      }
 
+      .contato-header a:hover {
+        text-decoration: underline;
+      }
 
-  .contatos {
-    display: flex;
-    flex-direction: column;
-  }
+      nav {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
+      nav > a {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: #4a2e2b;
+        color: #f5e6cc;
+        border-radius: 10px;
+        transition: all 0.17s ease;
+      }
 
+      nav > a:hover {
+        transform: scale(1.1);
+      }
 
-.contato-header a {
-  color: #c9a44c;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 5px;
-}
+      nav > a:active {
+        transform: scale(0.97);
+      }
 
-.contato-header a:hover {
-  text-decoration: underline;
-}
+      .p-inicio {
+        margin-bottom: 30px;
+      }
 
-    nav {
-      margin-top: 35px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
+      .titulos-sections {
+        margin-top: 50px;
+        color: #4a2e2b;
+        font-size: 2rem;
+        text-align: center;
+      }
 
-    nav>a {
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-top: 13px;
-      padding-bottom: 13px;
-      background-color: #4a2e2b;
-      color: #f5e6cc;
-      border-radius: 10px;
-      transition: all .17s ease;
-    }
+      /* Estilo da caixa do popup */
+      #popup {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
 
-    nav>a:hover {
-      transform: scale(1.10);
-    }
+      #closeBtn1,
+      #closeBtn2 {
+        margin-top: 10px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    nav>a:active {
-      transform: scale(0.97);
-    }
+      a {
+        text-decoration: none;
+      }
 
-    .p-inicio {
-      margin-bottom: 30px;
-    }
+      body {
+        background-color: #f7f2e8;
+        color: #333;
+        line-height: 1.6;
+      }
 
-    .titulos-sections {
-      margin-top: 50px;
-      color: #4a2e2b;
-      font-size: 2rem;
-      text-align: center;
-    }
+      header {
+        background-image: url("foto-banner-@joaomarcosviolino no youtube copy.jpg");
+        background-size: cover;
+        /* background: linear-gradient(135deg, #4a2e2b 0%, #4a2e2b 33%, #fff 33%, #fff 66%, #8d6449 66%, #8d6449 100%); */
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+      }
 
-    /* Estilo da caixa do popup */
-    #popup {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
+      .header-content {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-    #closeBtn1,
-    #closeBtn2 {
-      margin-top: 10px;
-    }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+      .form {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 2rem auto;
+      }
 
-        a {
-          text-decoration: none;
-        }
+      .enviarBtn,
+      #closeBtn1,
+      #closeBtn2 {
+        background-color: #4a2e2b;
+        color: white;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-self: center;
+      }
 
-        body {
-            background-color: #f7f2e8;
-            color: #333;
-            line-height: 1.6;
-        }
+      label {
+        font-weight: bold;
+        color: #4a2e2b;
+      }
 
+      .enviarBtn:hover,
+      #closeBtn1:hover,
+      #closeBtn2:hover {
+        background-color: #352120;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .link-ec:hover {
+        text-decoration: underline;
+      }
+
+      .input-text {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: border 0.3s ease;
+        outline: none;
+      }
+
+      .input-text:focus {
+        border-color: #4a2e2b;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .lista-noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .imagens-header {
+        display: flex;
+      }
+
+      .evento-noticia {
+        margin-bottom: 32px;
+      }
+
+      #itemweb1,
+      #itemweb2,
+      #itemweb3 {
+        margin-bottom: 5px;
+        margin-top: 15px;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .intro p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .violino-icon {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 1rem auto;
+        fill: #4a2e2b;
+      }
+
+      .photos {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+      }
+
+      .photo-space {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .photo-space:hover {
+        cursor: pointer;
+      }
+
+      .pricing {
+        margin: 3rem 0;
+      }
+
+      .pricing h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #4a2e2b;
+      }
+
+      section > p {
+        margin-bottom: 25px;
+        margin-top: 13px;
+      }
+
+      .biografia {
+        text-align: inherit;
+      }
+
+      p > a {
+        font-weight: bold;
+        color: blue;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      h3 > a:hover {
+        color: blue;
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4a2e2b;
+        color: white;
+        letter-spacing: 1px;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .highlight {
+        background-color: #f8f8f8;
+        font-weight: bold;
+      }
+
+      p > a:hover {
+        text-decoration: underline;
+      }
+
+      .economy {
+        color: #008000;
+        font-weight: bold;
+      }
+
+      .cta {
+        text-align: center;
+        margin: 4rem 0;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #8d6449;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .cta-button:hover {
+        background-color: #725239;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #4a2e2b;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+
+      .social-icons i {
+        font-size: 1.5rem;
+        width: 140px;
+        height: 40px;
+        background-color: white;
+        color: #4a2e2b;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .social-icons i:hover {
+        background-color: #8d6449;
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
         header {
-          background-image: url("foto-banner-@joaomarcosviolino no youtube copy.jpg");
-          background-size: cover;
-            /* background: linear-gradient(135deg, #4a2e2b 0%, #4a2e2b 33%, #fff 33%, #fff 66%, #8d6449 66%, #8d6449 100%); */
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative;
+          width: 100vw;
         }
 
         .header-content {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 800px;
-            margin: 0 auto;
+          padding: 1rem;
+          font-size: 0.9rem;
         }
-
-
-
-
-        .form {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 2rem auto;
-        }
-
-        .enviarBtn, #closeBtn1, #closeBtn2 {
-          background-color: #4a2e2b;
-          color: white;
-          padding: 0.8rem 2rem;
-          border: none;
-          border-radius: 50px;
-          font-weight: bold;
-          font-size: 1rem;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          align-self: center;
-      }
-
-  label {
-    font-weight: bold;
-    color: #4a2e2b;
-}
-
-.enviarBtn:hover, #closeBtn1:hover, #closeBtn2:hover {
-    background-color: #352120;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-    .link-ec:hover {
-      text-decoration: underline;
-    }
-
-  .input-text {
-      width: 100%;
-      padding: 0.6rem 1rem;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      font-size: 1rem;
-      transition: border 0.3s ease;
-      outline: none;
-  }
-
-  .input-text:focus {
-    border-color: #4a2e2b;
-}
 
         h1 {
-            font-size: 2.1rem;
-            margin-bottom: 1rem;
+          font-size: 1.8rem;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+        nav {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 20px;
         }
 
-        .lista-noticias {
-          display: flex;
+        nav > a {
+          width: 90%;
+          text-align: center;
+        }
+
+        .violino {
+          height: auto;
+          width: 65%;
+        }
+
+        .violino-img {
+          display: none;
+        }
+
+        img {
+          height: auto;
+          width: 100%;
+          padding-top: 30px;
+          margin-bottom: 50px;
+        }
+
+        .form {
+          width: 90%;
+          padding: 1rem;
+        }
+
+        .photo-space {
+          width: 100%;
+          height: auto;
+        }
+
+        .photos {
           flex-direction: column;
           align-items: center;
         }
 
-        .imagens-header {
-          display: flex;
+        .contato-header {
+          flex-direction: column;
+          align-items: center;
         }
 
-        .evento-noticia {
-          margin-bottom: 32px;
-        }
-
-        #itemweb1,
-        #itemweb2,
-        #itemweb3 {
-          margin-bottom: 5px;
-          margin-top: 15px;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .intro p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .violino-icon {
-            width: 100px;
-            height: 100px;
-            display: block;
-            margin: 1rem auto;
-            fill: #4a2e2b;
-        }
-
-        .photos {
-            display: flex;
-            justify-content: space-around;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-        }
-
-        .photo-space {
-            width: 300px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .photo-space:hover {
-            cursor: pointer;
-        }
-
-        .pricing {
-            margin: 3rem 0;
-        }
-
-        .pricing h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            color: #4a2e2b;
-        }
-
-        section>p {
-          margin-bottom: 25px;
-          margin-top: 13px;
-        }
-
-        .biografia {
-          text-align: inherit;
-        }
-
-
-        p>a {
-          font-weight: bold;
-          color: blue;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        h3>a:hover {
-          color: blue;
-        }
-
-        th, td {
-            padding: 1rem;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #4a2e2b;
-            color: white;
-            letter-spacing: 1px;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        .highlight {
-            background-color: #f8f8f8;
-            font-weight: bold;
-        }
-
-
-        p>a:hover {
-          text-decoration: underline;
-        }
-
-        .economy {
-            color: #008000;
-            font-weight: bold;
-        }
-
-        .cta {
-            text-align: center;
-            margin: 4rem 0;
+        .contato-header a {
+          font-size: 0.9rem;
+          margin: 5px 0;
         }
 
         .cta-button {
-            display: inline-block;
-            background-color: #8d6449;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
+          width: 80%;
+          font-size: 1rem;
         }
 
-        .cta-button:hover {
-            background-color: #725239;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #4a2e2b;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+        table,
+        th,
+        td {
+          font-size: 0.9rem;
+          padding: 0.5rem;
         }
 
         .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
+          flex-direction: column;
         }
 
         .social-icons i {
-            font-size: 1.5rem;
-            width: 140px;
-            height: 40px;
-            background-color: white;
-            color: #4a2e2b;
-            border-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
+          width: 100px;
+          height: 35px;
+          font-size: 1.2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 2rem;
         }
 
-        .social-icons i:hover {
-            background-color: #8d6449;
-            color: white;
-            transform: translateY(-3px);
+        table {
+          font-size: 0.8rem;
         }
 
-        @media (max-width: 768px) {
-              header {
-                width: 100vw;
-              }
-
-              .header-content {
-                padding: 1rem;
-                font-size: 0.9rem;
-              }
-
-              h1 {
-                font-size: 1.8rem;
-              }
-
-              nav {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 20px;
-              }
-
-              nav > a {
-                width: 90%;
-                text-align: center;
-              }
-
-              .violino {
-                height: auto;
-                width: 65%;
-              }
-
-              .violino-img {
-                display: none;
-              }
-
-              img {
-                height: auto;
-                width: 100%;
-                padding-top: 30px;
-                margin-bottom: 50px;
-              }
-
-              .form {
-                width: 90%;
-                padding: 1rem;
-              }
-
-              .photo-space {
-                width: 100%;
-                height: auto;
-              }
-
-              .photos {
-                flex-direction: column;
-                align-items: center;
-              }
-
-              .contato-header {
-                flex-direction: column;
-                align-items: center;
-              }
-
-              .contato-header a {
-                font-size: 0.9rem;
-                margin: 5px 0;
-              }
-
-              .cta-button {
-                width: 80%;
-                font-size: 1rem;
-              }
-
-              table, th, td {
-                font-size: 0.9rem;
-                padding: 0.5rem;
-              }
-
-              .social-icons {
-                flex-direction: column;
-              }
-
-              .social-icons i {
-                width: 100px;
-                height: 35px;
-                font-size: 1.2rem;
-              }
-            }
-
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            table {
-                font-size: 0.8rem;
-            }
-
-            th, td {
-                padding: 0.5rem;
-            }
-
-            .photo-space {
-                width: 100%;
-                max-width: 300px;
-                height: 200px;
-            }
+        th,
+        td {
+          padding: 0.5rem;
         }
 
-        /* Animation */
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .photo-space {
+          width: 100%;
+          max-width: 300px;
+          height: 200px;
         }
+      }
 
-        .animate {
-            animation: fade-in 1s ease forwards;
+      /* Animation */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-        .delay-1 {
-            opacity: 0;
-            animation-delay: 0.2s;
-        }
+      .animate {
+        animation: fade-in 1s ease forwards;
+      }
 
-        .delay-2 {
-            opacity: 0;
-            animation-delay: 0.4s;
-        }
+      .delay-1 {
+        opacity: 0;
+        animation-delay: 0.2s;
+      }
 
-        .delay-3 {
-            opacity: 0;
-            animation-delay: 0.6s;
-        }
+      .delay-2 {
+        opacity: 0;
+        animation-delay: 0.4s;
+      }
+
+      .delay-3 {
+        opacity: 0;
+        animation-delay: 0.6s;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <h1>Aulas de Violino Online com João Marcos</h1>
-            <h2>Aprenda Violino com Excelência da escola Franco Belga</h2>
-            <p>Aulas online personalizadas para todos os níveis</p>
-        </div>
+      <div class="header-content">
+        <h1>Aulas de Violino Online com João Marcos</h1>
+        <h2>Aprenda Violino com Excelência da escola Franco Belga</h2>
+        <p>Aulas online personalizadas para todos os níveis</p>
+      </div>
     </header>
 
     <div class="contato-header">
-      <a target="_blank" href="mailto:joaomarcospaulini@gmail.com"><strong>Email:</strong> joaomarcospaulini@gmail.com</a>
-      <a target="_blank" href="tel:+5561998534813"><strong>Telefone:</strong> +55 61 998534813</a>
-      <a target="_blank" href="https://wa.me/5561998534813"><strong>WhatsApp</strong> +55 61 998534813 - João Marcos Simon Paulini</a>
+      <a target="_blank" href="mailto:joaomarcospaulini@gmail.com"
+        ><strong>Email:</strong> joaomarcospaulini@gmail.com</a
+      >
+      <a target="_blank" href="tel:+5561998534813"
+        ><strong>Telefone:</strong> +55 61 998534813</a
+      >
+      <a target="_blank" href="https://wa.me/5561998534813"
+        ><strong>WhatsApp</strong> +55 61 998534813 - João Marcos Simon
+        Paulini</a
+      >
     </div>
 
     <div class="animate imagens-header">
-      <img class="violino" src="foto2-para thumbnail sem fundo.png" alt="Imagem de João Marcos tocando violino">
-      <img class="violino violino-img" src="violino-site.png" alt="Imagem de um violino.">
+      <img
+        class="violino"
+        src="foto2-para-thumbnail-sem-fundo.png"
+        alt="Imagem de João Marcos tocando violino"
+      />
+      <img
+        class="violino violino-img"
+        src="violino-site.png"
+        alt="Imagem de um violino."
+      />
     </div>
-
-
 
     <nav>
       <a href="#aulas">Aulas de Violino</a>
@@ -644,192 +667,305 @@
       <a href="#desenvolvimentoweb">Desenvolvimento WEB</a>
       <a href="#contato">Entre em contato</a>
       <a href="#noticias">Notícias e Eventos</a>
+      <a href="/index_english.html">🇺🇸 🇬🇧 English</a>
+      <a href="/index_francais.html">🇫🇷 Français</a>
     </nav>
 
     <div class="container">
       <section id="aulas">
         <div class="pricing animate delay-3">
-        <h2 class="titulos-sections">Aulas de Violino</h2>
+          <h2 class="titulos-sections">Aulas de Violino</h2>
           <table>
-                <thead>
-                    <tr>
-                        <th>Pacote</th>
-                        <th>Aulas por Semana</th>
-                        <th>Nº de Aulas</th>
-                        <th>Valor Total</th>
-                        <th>Valor por Aula</th>
-                        <th>Economia Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Aula avulsa</td>
-                        <td>—</td>
-                        <td>1</td>
-                        <td>R$ 100</td>
-                        <td>R$ 100</td>
-                        <td>—</td>
-                    </tr>
-                    <tr>
-                        <td>Mensal – 1x por semana</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>R$ 380</td>
-                        <td>R$ 95</td>
-                        <td class="economy">Economiza R$ 20 em relação à avulsa</td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>Mensal – 2x por semana</td>
-                        <td>2</td>
-                        <td>8</td>
-                        <td>R$ 740</td>
-                        <td>R$ 92,50</td>
-                        <td class="economy">Economiza R$ 60 em relação à avulsa</td>
-                    </tr>
-                    <tr>
-                        <td>Trimestral – 2x por semana</td>
-                        <td>2</td>
-                        <td>24</td>
-                        <td>R$ 1.980</td>
-                        <td>R$ 82,50</td>
-                        <td class="economy">Economiza R$ 420 em relação à avulsa</td>
-                    </tr>
-                </tbody>
-            </table>
+            <thead>
+              <tr>
+                <th>Pacote</th>
+                <th>Aulas por Semana</th>
+                <th>Nº de Aulas</th>
+                <th>Valor Total</th>
+                <th>Valor por Aula</th>
+                <th>Economia Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aula avulsa</td>
+                <td>—</td>
+                <td>1</td>
+                <td>R$ 100</td>
+                <td>R$ 100</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Mensal – 1x por semana</td>
+                <td>1</td>
+                <td>4</td>
+                <td>R$ 380</td>
+                <td>R$ 95</td>
+                <td class="economy">Economiza R$ 20 em relação à avulsa</td>
+              </tr>
+              <tr class="highlight">
+                <td>Mensal – 2x por semana</td>
+                <td>2</td>
+                <td>8</td>
+                <td>R$ 740</td>
+                <td>R$ 92,50</td>
+                <td class="economy">Economiza R$ 60 em relação à avulsa</td>
+              </tr>
+              <tr>
+                <td>Trimestral – 2x por semana</td>
+                <td>2</td>
+                <td>24</td>
+                <td>R$ 1.980</td>
+                <td>R$ 82,50</td>
+                <td class="economy">Economiza R$ 420 em relação à avulsa</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
       </section>
 
       <section id="agendaraula">
-
-
         <div class="cta animate">
-            <h2>Pronto para iniciar sua jornada musical no violino?</h2>
-            <button class="cta-button" id="contactBtn1">Agende uma Aula Experimental</button>
-            <strong><p>Te responderemos em até 2 dias por Email ou WhatsApp.</p></strong>
+          <h2>Pronto para iniciar sua jornada musical no violino?</h2>
+          <button class="cta-button" id="contactBtn1">
+            Agende uma Aula Experimental
+          </button>
+          <p>
+            <strong
+              >Te responderemos em até 2 dias por Email ou WhatsApp.</strong
+            >
+          </p>
         </div>
-    </div>
 
-    <div id="popupOverlay1">
-      <div id="popup">
-        <form action="https://formspree.io/f/mnndelrl" method="POST" class="form">
-            <label class="label">
-              Seu email:
-              <input class="input-text" type="email" name="email" placeholder="email@email.com">
-            </label>
-            <label class="label">
-              Seu WhatsApp(com DDD):
-              <input class="input-text" type="tel" name="tel" placeholder="(99) 99999-9999">
-            </label>
-            <label class="label">
-              Seu nome completo:
-              <input type="name" name="name" class="input-text">
-            </label>
-            <label class="label">
-              Qual seria o melhor horário para você?
-              <input type="datetime-local" name="datahora" />
-            </label>
-            <label class="label">
-              Sua mensagem:
-              <textarea name="message" class="input-text"></textarea>
-            </label>
-            <button class="enviarBtn" type="submit">Enviar</button>
-        </form>
-        <button id="closeBtn1">Fechar</button>
-      </div>
-    </div>
-
-  </section>
+        <div id="popupOverlay1">
+          <div id="popup">
+            <form
+              action="https://formspree.io/f/mnndelrl"
+              method="POST"
+              class="form"
+            >
+              <label class="label">
+                Seu email:
+                <input
+                  class="input-text"
+                  type="email"
+                  name="email"
+                  placeholder="email@email.com"
+                />
+              </label>
+              <label class="label">
+                Seu WhatsApp(com DDD):
+                <input
+                  class="input-text"
+                  type="tel"
+                  name="tel"
+                  placeholder="(99) 99999-9999"
+                />
+              </label>
+              <label class="label">
+                Seu nome completo:
+                <input type="text" name="name" class="input-text" />
+              </label>
+              <label class="label">
+                Qual seria o melhor horário para você?
+                <input type="datetime-local" name="datahora" />
+              </label>
+              <label class="label">
+                Sua mensagem:
+                <textarea name="message" class="input-text"></textarea>
+              </label>
+              <button class="enviarBtn" type="submit">Enviar</button>
+            </form>
+            <button id="closeBtn1">Fechar</button>
+          </div>
+        </div>
+      </section>
 
       <section class="animate biografia" id="biografia">
         <h2 class="titulos-sections">Biografia</h2>
-        <p><strong>João Marcos Simon Paulini</strong> (nasceu no ano de 2012 em Évora, Portugal) é violinista, escritor e professor online de francês e violino com atuação destacada no cenário cultural de Brasília. Cofundador da Orquestra KOPA (Orquestra Karla Oliveto Paulinyi), desenvolve uma intensa atividade pedagógica e artística voltada à formação de jovens músicos, apresentando-se regularmente em concertos didáticos e eventos culturais. A Orquestra KOPA tem como objetivo principal promover a música de câmara e o repertório sinfônico adaptado a grupos pequenos. <br>
-Além de seu trabalho como instrumentista, João Marcos também se destaca como escritor, com publicações no <a href="https://clubedeautores.com.br" target="_blank">Clube de Autores</a>. Suas obras literárias incluem os livros:<br>
-<a href="https://clubedeautores.com.br/livro/a-longa-viagem-pelo-mundo-volume" target="_blank">A Longa Viagem Pelo Mundo – Volume 1 </a><br>
-<a href="https://clubedeautores.com.br/livro/le-long-voyage-autour-du-monde-tome" target="_blank">Le Long Voyage Autour du Monde – Tome 1 (edição em francês) </a><br></p>
-<p>No ambiente digital, João Marcos é o criador do canal <a href="https://youtube.com/@joaomarcosviolino" target="_blank">João Marcos - Violino</a> no YouTube, onde compartilha vídeos de performances e apresentações de seus concertos de violino. Seu conteúdo é voltado tanto para iniciantes quanto para músicos mais avançados que buscam aperfeiçoar sua técnica.
-João também colabora com o trabalho de seu pai, <a  target="_blank" href="https://paulinyi.com">Zoltan Paulinyi</a> renomado violinista, compositor e fundador de diversos grupos musicais e projetos educacionais no Brasil. Juntos, participam de atividades da Schola Cantorum de Brasília e de apresentações com o Duo SPES, promovendo a música clássica em diferentes contextos, com ênfase em formação, inovação e acessibilidade.
-Além de suas atividades artísticas e pedagógicas, João Marcos é também um desenvolvedor web talentoso, criando sites modernos, funcionais e otimizados, com domínio em linguagens como HTML, CSS, JavaScript e Python. Ele alia sua sensibilidade artística ao universo da tecnologia, entregando projetos que unem estética, funcionalidade e criatividade.
-</p>
+        <p>
+          <strong>João Marcos Simon Paulini</strong> (nasceu no ano de 2012 em
+          Évora, Portugal) é violinista, escritor e professor online de francês
+          e violino com atuação destacada no cenário cultural de Brasília.
+          Cofundador da Orquestra KOPA (Orquestra Karla Oliveto Paulinyi),
+          desenvolve uma intensa atividade pedagógica e artística voltada à
+          formação de jovens músicos, apresentando-se regularmente em concertos
+          didáticos e eventos culturais. A Orquestra KOPA tem como objetivo
+          principal promover a música de câmara e o repertório sinfônico
+          adaptado a grupos pequenos. <br />
+          Além de seu trabalho como instrumentista, João Marcos também se
+          destaca como escritor, com publicações no
+          <a href="https://clubedeautores.com.br" target="_blank"
+            >Clube de Autores</a
+          >. Suas obras literárias incluem os livros:<br />
+          <a
+            href="https://clubedeautores.com.br/livro/a-longa-viagem-pelo-mundo-volume"
+            target="_blank"
+            >A Longa Viagem Pelo Mundo – Volume 1 </a
+          ><br />
+          <a
+            href="https://clubedeautores.com.br/livro/le-long-voyage-autour-du-monde-tome"
+            target="_blank"
+            >Le Long Voyage Autour du Monde – Tome 1 (edição em francês) </a
+          ><br />
+        </p>
+        <p>
+          No ambiente digital, João Marcos é o criador do canal
+          <a href="https://youtube.com/@joaomarcosviolino" target="_blank"
+            >João Marcos - Violino</a
+          >
+          no YouTube, onde compartilha vídeos de performances e apresentações de
+          seus concertos de violino. Seu conteúdo é voltado tanto para
+          iniciantes quanto para músicos mais avançados que buscam aperfeiçoar
+          sua técnica. João também colabora com o trabalho de seu pai,
+          <a target="_blank" href="https://paulinyi.com">Zoltan Paulinyi</a>
+          renomado violinista, compositor e fundador de diversos grupos musicais
+          e projetos educacionais no Brasil. Juntos, participam de atividades da
+          Schola Cantorum de Brasília e de apresentações com o Duo SPES,
+          promovendo a música clássica em diferentes contextos, com ênfase em
+          formação, inovação e acessibilidade. Além de suas atividades
+          artísticas e pedagógicas, João Marcos é também um desenvolvedor web
+          talentoso, criando sites modernos, funcionais e otimizados, com
+          domínio em linguagens como HTML, CSS, JavaScript e Python. Ele alia
+          sua sensibilidade artística ao universo da tecnologia, entregando
+          projetos que unem estética, funcionalidade e criatividade.
+        </p>
       </section>
-
-
 
       <section class="animate" id="youtube">
         <h2 class="titulos-sections">Canal do YouTube</h2>
-        <h3><a target="_blank" href="https://youtube.com/@joaomarcosviolino" style="color: black; text-decoration: underline;">João Marcos - Violino</a></h3>
-<p>No canal oficial, você encontra vídeos das principais apresentações, projetos pessoais, gravações de estúdio e trechos de ensaios. <br> </p>
+        <h3>
+          <a
+            target="_blank"
+            href="https://youtube.com/@joaomarcosviolino"
+            style="color: black; text-decoration: underline"
+            >João Marcos - Violino</a
+          >
+        </h3>
+        <p>
+          No canal oficial, você encontra vídeos das principais apresentações,
+          projetos pessoais, gravações de estúdio e trechos de ensaios.<br />
+        </p>
 
-<strong>Vídeos selecionados</strong> <br>
+        <strong>Vídeos selecionados</strong><br />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UfPOmH4m2lI?si=XiKwiBGBHM_7F3NZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UfPOmH4m2lI?si=XiKwiBGBHM_7F3NZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe
+        ><br />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C2H6Q658fzc?si=4Zlcet394D0iekna" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/C2H6Q658fzc?si=4Zlcet394D0iekna"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe
+        ><br />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k0IHIjzngG8?si=DXQrQEK0_WpY_CEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/k0IHIjzngG8?si=DXQrQEK0_WpY_CEf"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </section>
 
       <section class="animate" id="desenvolvimentoweb">
-        <h2 class="titulos-sections">Desenvolvimento WEB</h2><br>
-        <p>Além da música, João Marcos também atua como desenvolvedor web, criando sites acessíveis, rápidos e com design moderno.
+        <h2 class="titulos-sections">Desenvolvimento WEB</h2>
+        <br />
+        <p>
+          Além da música, João Marcos também atua como desenvolvedor web,
+          criando sites acessíveis, rápidos e com design moderno.
         </p>
         <p><strong id="itemweb2">Habilidades</strong></p>
-        <p>HTML, CSS, JavaScript, PHP, Flet, Python, deploy com Vercel, InfinityFree, HostGator, entre outros.</p>
+        <p>
+          HTML, CSS, JavaScript, PHP, Flet, Python, deploy com Vercel,
+          InfinityFree, HostGator, entre outros.
+        </p>
         <p><strong id="itemweb3">Encomendas de sites</strong></p>
 
         <div class="cta animate">
-            <button class="cta-button" id="contactBtn2">Faça um pedido de site</button>
-            <strong><p>Te responderemos em até 2 dias por Email ou WhatsApp.</p></strong>
+          <button class="cta-button" id="contactBtn2">
+            Faça um pedido de site
+          </button>
+          <p>
+            <strong
+              >Te responderemos em até 2 dias por Email ou WhatsApp.</strong
+            >
+          </p>
         </div>
 
         <div id="popupOverlay2">
           <div id="popup">
-
-
-
-        <form action="https://formspree.io/f/xpwrpqdd" method="POST" class="form">
-            <label class="label">
-              Seu email:
-              <input class="input-text" type="email" name="email" placeholder="email@email.com">
-            </label>
-            <label class="label">
-              Seu WhatsApp(com DDD):
-              <input class="input-text" type="tel" name="tel" placeholder="(99) 99999-9999">
-            </label>
-            <label class="label">
-              Seu nome completo:
-              <input type="name" name="name" class="input-text">
-            </label>
-            <label class="label">
-              Descreva rapidamente para que e como será seu site:
-              <textarea name="message" class="input-text"></textarea>
-            </label>
-            <button class="enviarBtn" type="submit">Enviar</button>
-        </form>
-        <button id="closeBtn2">Fechar</button>
+            <form
+              action="https://formspree.io/f/xpwrpqdd"
+              method="POST"
+              class="form"
+            >
+              <label class="label">
+                Seu email:
+                <input
+                  class="input-text"
+                  type="email"
+                  name="email"
+                  placeholder="email@email.com"
+                />
+              </label>
+              <label class="label">
+                Seu WhatsApp(com DDD):
+                <input
+                  class="input-text"
+                  type="tel"
+                  name="tel"
+                  placeholder="(99) 99999-9999"
+                />
+              </label>
+              <label class="label">
+                Seu nome completo:
+                <input type="text" name="name" class="input-text" />
+              </label>
+              <label class="label">
+                Descreva rapidamente para que e como será seu site:
+                <textarea name="message" class="input-text"></textarea>
+              </label>
+              <button class="enviarBtn" type="submit">Enviar</button>
+            </form>
+            <button id="closeBtn2">Fechar</button>
+          </div>
         </div>
-      </div>
-
-        </div>
-
-
-
       </section>
-
-
 
       <section id="contato">
         <h2 class="titulos-sections">Entre em Contato</h2>
         <div class="contatos">
-
-
-          <a class="link-ec" href="mailto:joaomarcospaulini@gmail.com" target="_blank">Email: joaomarcospaulini@gmail.com</a>
-          <a class="link-ec" href="tel:+5561998534813" target="_blank">Telefone: +55 61 998534813</a>
-          <a class="link-ec" href="https://wa.me/+5561998534813" target="_blank">WhatsApp: +55 61 998534813 - João Marcos Simon Paulini</a>
-
+          <a
+            class="link-ec"
+            href="mailto:joaomarcospaulini@gmail.com"
+            target="_blank"
+            >Email: joaomarcospaulini@gmail.com</a
+          >
+          <a class="link-ec" href="tel:+5561998534813" target="_blank"
+            >Telefone: +55 61 998534813</a
+          >
+          <a class="link-ec" href="https://wa.me/+5561998534813" target="_blank"
+            >WhatsApp: +55 61 998534813 - João Marcos Simon Paulini</a
+          >
         </div>
-
       </section>
 
       <section class="animate" id="noticias">
@@ -840,81 +976,54 @@ Além de suas atividades artísticas e pedagógicas, João Marcos é também um 
           <div class="evento-noticia">
             <p>Concerto do dia 05/07/2025</p>
             <details close>
-            <summary>Mais informações</summary>
+              <summary>Mais informações</summary>
               <div class="info-eventos">
-                <p>Participantes: João Marcos (Solista) e OSTNCS (Orquestra Sinfônica do Teatro Nacional Cláudi Santoro)</p>
-                <p>Programação: 1º Moviemnto do Concerto nº2 de Mozart para violino</p>
-                <p>Local: Teatro Nacional Cláudio Santoro (sala Martins Penna)</p>
+                <p>
+                  Participantes: João Marcos (Solista) e OSTNCS (Orquestra
+                  Sinfônica do Teatro Nacional Cláudi Santoro)
+                </p>
+                <p>
+                  Programação: 1º Movimento do Concerto nº2 de Mozart para
+                  violino
+                </p>
+                <p>
+                  Local: Teatro Nacional Cláudio Santoro (sala Martins Penna)
+                </p>
                 <p>Horário: 20:00</p>
               </div>
-            </div>
-          </details>
+            </details>
+          </div>
         </div>
-
       </section>
+    </div>
+    <!-- fecha container -->
 
-        </div>
-
-        <div class="photos">
-            <div class="photo-space animate delay-1" id="photo1">
-                <img style="padding-top:0px; height:335px; margin:8px;" src="foto-para thumbnail-sem fundo.png" alt="Foto de João Marcos Simon Paulini segurando seu violino.">
-            </div>
-        </div>
+    <div class="photos">
+      <div class="photo-space animate delay-1" id="photo1">
+        <img
+          style="padding-top: 0px; height: 335px; margin: 8px"
+          src="foto-para-thumbnail-sem-fundo.png"
+          alt="Foto de João Marcos Simon Paulini segurando seu violino."
+        />
+      </div>
+    </div>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://wa.me/5561998534813" target="_blank"><i class="social-icon">WhatsApp</i></a>
-            <a href="mailto:joaomarcospaulini@gmail.com" target="_blank"><i class="social-icon">E-mail</i></a>
-            <a href="https://youtube.com/@joaomarcosviolino" target="_blank"><i class="social-icon">YouTube</i></a>
-        </div>
-        <p>© João Marcos CSS Web Design & Aulas de Violino 2025. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/5561998534813" target="_blank"
+          ><i class="social-icon">WhatsApp</i></a
+        >
+        <a href="mailto:joaomarcospaulini@gmail.com" target="_blank"
+          ><i class="social-icon">E-mail</i></a
+        >
+        <a href="https://youtube.com/@joaomarcosviolino" target="_blank"
+          ><i class="social-icon">YouTube</i></a
+        >
+      </div>
+      <p>
+        © João Marcos CSS Web Design & Aulas de Violino 2025. Todos os direitos
+        reservados.
+      </p>
     </footer>
-
-    <script>
-        // Animate elements when they come into view
-
-
-        // Show animations when elements come into view
-        const animatedElements = document.querySelectorAll('.animate');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        animatedElements.forEach(element => {
-            observer.observe(element);
-            element.style.animationPlayState = 'paused';
-        });
-    </script>
-    <script>
-    const contactBtn1 = document.getElementById('contactBtn1');
-    const popupOverlay1 = document.getElementById('popupOverlay1');
-    const closeBtn1 = document.getElementById('closeBtn1');
-
-    contactBtn1.addEventListener('click', () => {
-      popupOverlay1.style.display = 'flex';
-    });
-
-    closeBtn1.addEventListener('click', () => {
-      popupOverlay1.style.display = 'none';
-    });
-  </script>
-  <script>
-  const contactBtn2 = document.getElementById('contactBtn2');
-  const popupOverlay2= document.getElementById('popupOverlay2');
-  const closeBtn2 = document.getElementById('closeBtn2');
-
-  contactBtn2.addEventListener('click', () => {
-    popupOverlay2.style.display = 'flex';
-  });
-
-  closeBtn2.addEventListener('click', () => {
-    popupOverlay2.style.display = 'none';
-  });
-</script>
-</body>
+  </body>
 </html>
